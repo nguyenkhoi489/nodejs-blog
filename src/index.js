@@ -10,7 +10,7 @@ app.use(morgan('combined'));
 
 //Template engine
 // app.engine('handlebars', engine()); //Khởi tạo handlebars bằng hàm engine được import từ thư viện
-app.engine( "hds", engine({ extname: "hds", defaultLayout: false, layoutsDir: "views/layouts/" }) );
+app.engine( 'hds', engine({extname: 'hds'}) );
 
 app.set('view engine', 'hds'); // set view engine là handlebars
 
